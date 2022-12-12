@@ -16,6 +16,20 @@ var specialChar = " !, #, $, %, &, ', (, ), *, +, ,, -, ., /, :, ;, <, =, >, ?, 
 // Alert windows could be set up to prompt if any of these criterias want to be used. Using If or else statements?
  var passLength = prompt("Please input desired password length, between 8 to 128 characters")
 
+ while (passLength < 8 || passLength > 128) {
+  alert(
+    "Password Length must be between 8-128 characters. Please enter the length again"
+  );
+  passLength = prompt(
+    "What length of passowrd do you need? Please select any length between 8 and 128."
+  );
+}
+
+
+
+
+
+
 //inside the return i need to place the final product, I think.
 return 
 }
