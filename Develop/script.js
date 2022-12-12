@@ -30,7 +30,7 @@ var specialChar = " !, #, $, %, &, ', (, ), *, +, ,, -, ., /, :, ;, <, =, >, ?, 
   var numbersConfirm = confirm("Do you want to have numbers included? 'OK' for yes and 'Cancel' for no");
   var specialConfirm = confirm("Do you want to have special characters included? 'OK' for yes and 'Cancel' for no");
 
-  /*here i'll add the confirm conditions to add  */
+  /*here i'll add the confirm conditions to add towards a var to later have that bar included in the final part  */
   var passwordCriteria = "";
 
 if (upperConfirm === true){
@@ -49,7 +49,10 @@ if (specialConfirm === true){
   passwordCriteria = passwordCriteria.concat(specialChar)
 
   var characters = Array.from(passwordCriteria)
-  
+  var finalProduct = ""
+  for (var i = 0; i < passLength; i++) {
+    finalProduct += passwordCriteria[Math.floor(Math.random() * passwordCriteria.length)];
+  }
 }
 //inside the return i need to place the final product, I think.
 return finalProduct
