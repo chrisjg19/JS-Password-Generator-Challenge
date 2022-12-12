@@ -22,4 +22,9 @@ THEN the password is either displayed in an alert or written to the page
 
 ## User Story
 
-I had to demonstrate my javascript knowledge I have learned so far in order to complete this project. 
+I had to demonstrate my javascript knowledge I have learned so far in order to complete this project. Which was not easy, a lot of googling and reading from w3schools and other learning websites was needed. 
+
+## Screenshot of Working product
+
+
+## Link to deployed page 
