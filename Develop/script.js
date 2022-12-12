@@ -66,7 +66,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
+/*so the generated password is coming back with some issues like this ", Q ?     ,,W   }B/> ,,,,   , 5,      ,,Z%75 " i added the prompt to add 45 characters and that was what was generated :( */
 }
 
 // Add event listener to generate button
