@@ -31,6 +31,8 @@ var specialChar = " !, #, $, %, &, ', (, ), *, +, ,, -, ., /, :, ;, <, =, >, ?, 
   var specialConfirm = confirm("Do you want to have special characters included? 'OK' for yes and 'Cancel' for no");
 
   /*here i'll add the confirm conditions to add  */
+  var passwordCriteria = "";
+
 if (upperConfirm === true){
   passwordCriteria = passwordCriteria.concat(upperCase);
 }
@@ -45,9 +47,12 @@ if (numbersConfirm === true){
 
 if (specialConfirm === true){
   passwordCriteria = passwordCriteria.concat(specialChar)
+
+  var characters = Array.from(passwordCriteria)
+  
 }
 //inside the return i need to place the final product, I think.
-return 
+return finalProduct
 }
 /* so based on this function it seems everything is already set up, what doesnt seem set up is the generatePassword function since there is nothing writtern for it */
 function writePassword() {
