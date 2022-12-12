@@ -49,8 +49,11 @@ if (specialConfirm === true){
   passwordCriteria = passwordCriteria.concat(specialChar)
 
   var characters = Array.from(passwordCriteria)
+  /*make a final var to combine everything and put in the return */
   var finalProduct = ""
+  /*make a for loop that includes the parameters to include all of the passwordCriteria. */
   for (var i = 0; i < passLength; i++) {
+    /*within the var i am using += to add a character each time the loop runs, based on the length of the passwordCriteria. Math.Floor is saying to take the values of the random number from math.random times the length of the password criteria rounded to a whole integer */
     finalProduct += passwordCriteria[Math.floor(Math.random() * passwordCriteria.length)];
   }
 }
