@@ -8,10 +8,10 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword() {
 
   /*definetely will need a return command since i am tryin to bring something back, also test to see if a return happens.  */
-var lowerCase = "a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z"
-var upperCase = "A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z"
-var numbers = "0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0"
-var specialChar = " !, #, $, %, &, ', (, ), *, +, ,, -, ., /, :, ;, <, =, >, ?, @, [, \, ], ^, _, `, {, |, }, ~"
+var lowerCase = "a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z";
+var upperCase = "A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z";
+var numbers = "0, 1, 2, 3, 4, 5, 6, 7, 8, 9";
+var specialChar = " !, #, $, %, &, ', (, ), *, +, ,, -, ., /, :, ;, <, =, >, ?, @, [, \, ], ^, _, `, {, |, }, ~";
 
 // Alert windows could be set up to prompt if any of these criterias want to be used. Using If or else statements?
  var passLength = prompt("Please input desired password length, between 8 to 128 characters")
@@ -24,23 +24,28 @@ var specialChar = " !, #, $, %, &, ', (, ), *, +, ,, -, ., /, :, ;, <, =, >, ?, 
     "What length of passowrd do you need? Please select any length between 8 and 128."
   );
   }
+/*I now need to link these confirms to the actual password generator.Also I feel that these should be associated with either a var or another function*/
+ var upperConfirm = confirm("Do you want to have uppercase letters included? 'OK' for yes and 'Cancel' for no");
+  var lowerConfirm = confirm("Do you want to have lowercase letters included? 'OK' for yes and 'Cancel' for no");
+  var numbersConfirm = confirm("Do you want to have numbers included? 'OK' for yes and 'Cancel' for no");
+  var specialConfirm = confirm("Do you want to have special characters included? 'OK' for yes and 'Cancel' for no");
 
-  confirm("Do you want to have uppercase letters included? 'OK' for yes and 'Cancel' for no")
-  confirm("Do you want to have lowercase letters included? 'OK' for yes and 'Cancel' for no")
-  confirm("Do you want to have numbers included? 'OK' for yes and 'Cancel' for no")
-  confirm("Do you want to have special characters included? 'OK' for yes and 'Cancel' for no")
+  /*here i'll add the confirm conditions to add  */
+if (upperConfirm === true){
+  passwordCriteria = passwordCriteria.concat(upperCase);
+}
 
+if (lowerConfirm === true){
+  passwordCriteria = passwordCriteria.concat(lowerCase);
+}
 
+if (numbersConfirm === true){
+  passwordCriteria = passwordCriteria.concat(numbers);
+}
 
-  
-
-
-
-
-
-
-
-
+if (specialConfirm === true){
+  passwordCriteria = passwordCriteria.concat(specialChar)
+}
 //inside the return i need to place the final product, I think.
 return 
 }
