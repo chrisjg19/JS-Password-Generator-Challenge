@@ -23,7 +23,18 @@ var specialChar = " !, #, $, %, &, ', (, ), *, +, ,, -, ., /, :, ;, <, =, >, ?, 
   passLength = prompt(
     "What length of passowrd do you need? Please select any length between 8 and 128."
   );
-}
+  }
+
+  confirm("Do you want to have uppercase letters included? 'OK' for yes and 'Cancel' for no")
+  confirm("Do you want to have lowercase letters included? 'OK' for yes and 'Cancel' for no")
+  confirm("Do you want to have numbers included? 'OK' for yes and 'Cancel' for no")
+  confirm("Do you want to have special characters included? 'OK' for yes and 'Cancel' for no")
+
+
+
+  
+
+
 
 
 
