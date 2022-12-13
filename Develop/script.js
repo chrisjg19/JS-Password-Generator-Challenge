@@ -8,7 +8,7 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword() {
 
   /*definetely will need a return command since i am tryin to bring something back, also test to see if a return happens.  */
-  /*ended up removing the spacing and commas and that helped produce a better random password but still get undefined at times if I only pick one criteria */
+  /*ended up removing the spacing and commas and that helped produce a better random password but still get undefined at times if I only pick one criteria, except for the special characters */
 var lowerCase = "abcdefghijklmnopqrstuvwxyz";
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numbers = "0123456789";
@@ -50,7 +50,7 @@ if (specialConfirm === true){
   passwordCriteria = passwordCriteria.concat(specialChar)
 
   var characters = Array.from(passwordCriteria)
-  /*make a final var to combine everything and put in the return */
+  //make a final var to combine everything and put in the return 
   var finalProduct = ""
   /*make a for loop that includes the parameters to include all of the passwordCriteria. */
   for (var i = 0; i < passLength; i++) {

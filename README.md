@@ -1,6 +1,6 @@
 # JS-Password-Generator-Challenge
 
-## The purpose of this Project was to work of the initial given code and create a working password generator. It had to meet the following criterias: 
+## The purpose of this project was to work off the initial given code and create a working password generator. It had to meet the following criterias: 
 
 ```
 GIVEN I need a new, secure password
