@@ -26,6 +26,14 @@ I had to demonstrate my javascript knowledge I have learned so far in order to c
 
 ## Screenshot of Working product
 
+![Demo Image](./Assets/03-javascript-homework-demo.png)
+![Length of password](./Assets/length.PNG)
+![UpperCase yes or no](./Assets/upper.PNG)
+![LowerCase yes or no](./Assets/lower.PNG)
+![Numbers yes or no](./Assets/numbers.PNG)
+![Specials yes or no](./Assets/specials.PNG)
+![Final Product](./Assets/Capture.PNG)
+
 
 
 ## Link to deployed page 
