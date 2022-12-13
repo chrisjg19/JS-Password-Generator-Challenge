@@ -27,4 +27,7 @@ I had to demonstrate my javascript knowledge I have learned so far in order to c
 ## Screenshot of Working product
 
 
+
 ## Link to deployed page 
+https://chrisjg19.github.io/JS-Password-Generator-Challenge/
+

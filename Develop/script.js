@@ -8,6 +8,7 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword() {
 
   /*definetely will need a return command since i am tryin to bring something back, also test to see if a return happens.  */
+  /*ended up removing the spacing and commas and that helped produce a better random password but still get undefined at times if I only pick one criteria */
 var lowerCase = "abcdefghijklmnopqrstuvwxyz";
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numbers = "0123456789";
